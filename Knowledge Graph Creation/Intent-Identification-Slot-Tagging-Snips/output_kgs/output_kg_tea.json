@@ -1,0 +1,28 @@
+{
+	"coffee": {
+		"CropGrownIn": "Asia,China,India,Sri Lanka,Assam,West Bengal,Tamil Nadu,Kerala,Karnataka,tropical,subtropical",
+		"climateRequirement": "hot,humd",
+		"tempRequirement": "20°-30°C",
+		"waterRequirement": "150-300 cm",
+		"soilRequirement": "deep,friable",
+		"productionTechnique": "pruning,centering,desuckering",
+		"diseases": [{
+			"Black root disease": {
+				"symptom": "The common symptoms are wilting, chlorosis, drying without defoilation and death of bush.",
+				"management": "Remove surface mulches around 10 m. Drench soil with mancozeb 30 g/10 L water. Follow phytosanitary measures."
+			},
+			"Collar canker": {
+				"symptom": "The main symptoms are chlorosis, cessation of growth, profuse flowering and canker on stem.",
+				"management": "Remove affected portion by pruning the healthy wood and apply copper fungicide to cut ends."
+			},
+			"Blister blight": {
+				"symptom": "The fungud affects only tender leaves and stems. Stem infection leads to goose-neck shape, dieback and snaping at the point of infection.",
+				"management": "Spray of copper oxychloride 350 g + plantomycin 7-g/ha at 3-4 days interval can control the disease."
+			}
+		}],
+		"pestManagement": {
+			"White/cockchafer grubs": "The creamy white grub eats away the roots. Main symptoms are ring barking of stem, chlorosis and defolication. The pest is a serious problem in areas where un-decomposed FYM is used. Control measures: Heat treatment of soil id effective.",
+			"Root mealy bug": "The pest is a problem in nursery. It sucks sap from the callusing region, mother leaf petiole and axillary buds. This arrests root development; leads to mother-leaf fall and finally death of plant. Control measures: It can be controlled by spraying and soil drenching with chlorpyriphos or quinalphos 0.05 per cent."
+		}
+	}
+}

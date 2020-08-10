@@ -1,0 +1,29 @@
+{% extends "base.html" %}
+
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/form.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+    <div class="col-md-6 col-md-offset-3">
+        <div class="wrapper">
+            <form class="form-signin" method='POST' action='' enctype="multipart/form-data"
+                style="margin-top: -30px; margin-bottom: -18px;">{% csrf_token %}
+                <div class="close-div"><span class="close"><a href="/FarmerAdvisory/" style="text-decoration: none;">×</a></span></div>
+                <h2 class="form-signin-heading">{{title}}</h2>
+                {{form.as_p }}
+                </label><br>
+                <button class="btn btn-lg btn-primary btn-block" type="submit">{{title}}</button>
+                <br>
+                {% if title == "Login" %}<h5>Not Registered? <a href="/FarmerAdvisory/register">Register Here</a></h5>
+                {% endif %}
+                {% if title == "Register" %}<h5>Already Registered? <a href="/FarmerAdvisory/login">Login Here</a></h5>
+                {% endif %}
+            </form>
+
+        </div>
+    </div>
+</div>
+{% endblock %}

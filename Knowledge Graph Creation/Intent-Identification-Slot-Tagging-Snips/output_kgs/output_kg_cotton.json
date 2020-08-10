@@ -1,0 +1,21 @@
+{
+	"cotton": {
+		"climateRequirement": "warm",
+		"soilRequirement": "black cotton,alluvial",
+		"contains": "cooking-oil,fibre",
+		"diseases": [{
+			"Root rot": {
+				"symptom": "The loss in yield occurs due to reduction in sudden death of plants. Due to this disease, healthy plants may wilt within 24 hr with leaves drooping without showing any discoloration.",
+				"management": "Soil should be drenched with 0.2% carbendazim"
+			},
+			"Fusarium wilt": {
+				"symptom": "In young as well as old plants the initial symptoms are stunning followed by yellowing, wilting and dropping of most of the leaves.",
+				"management": "Soak 4 kg seed in 8 L water containing 8 g of bavistin for 6-8 hr and 2-3 hr in case of delinted cotton."
+			}
+		}],
+		"pestManagement": {
+			"Pink boll worm": "It is a notorious pest of cotton in all cotton growing areas. Bt cotton provides effective protection against all cotton bollworms."
+		},
+		"postProductionTechnique": "Cotton is harvested in 3-4 pickings by hand as the bolls mature. By adopting improved technology, it is possible to harvest about 1.5-2 t/ha of seed cotton (kapas). However, much higher yields may be obtained from hybrid cottons. Cotton lint production is 33% of kapas production, while cotton to seed production is 66% of kapas production. Oil to seeds crushed is 14-18% and cake to seeds crushed is 82-86%."
+	}
+}

@@ -1,0 +1,11 @@
+{
+	"sugarcane": {
+		"CropGrownIn": "Brazil,tropical,India",
+		"soilRequirement": "deep,loamy,well drained,water holding",
+		"tempRequirement": {
+			"sprouting": "32° to 38°C",
+			"ripening": "12° to 14°C"
+		},
+		"postProductionTechnique": "Harvesting and collection of cane should either be mechanical or manual. In subtropical India, it has been shown that spring harvested crop would result in a better ratoon than that obtained by harvesting in the autumn. Sugarcane crop is harvested after attending maturity, generally it starts from the month of October and continue till the month of May in sub-tropical states whereas in Tropical states, it starts from the month of December and continues till the month of May. Cane tonnage at harvest with best management practices can vary between 120 and 150 t/ha, which depends on the length of the total growing period and whether it is a main or ratoon crop. The sugar recovery in sugarcane varies from state-to-state. Average sugar recovery in the country is 10.25%."
+	}
+}

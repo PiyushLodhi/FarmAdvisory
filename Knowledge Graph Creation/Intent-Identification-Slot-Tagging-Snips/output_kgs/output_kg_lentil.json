@@ -1,0 +1,18 @@
+{
+	"lentil": {
+		"contains": "lentil,protein,fat,ash,fibre,lentil,carbohydrate",
+		"CropGrownIn": "Madhya Pradesh,Uttar Pradesh,Bihar,lentil,West Bengal,drought tolerant",
+		"climateRequirement": "winter",
+		"soilRequirement": "friable,weed-free",
+		"pestManagement": {
+			"Aphid": "In case of severe infestation, leaves and shoots get deformed and stunted and sticky honeydew may be deposited over the leaf surface. Usually, only one spray of cypermethrin 0.004%, is sufficient to control aphid damage."
+		},
+		"postProductionTechnique": "Lentil crop should be harvested when the plants dry up and pods are mature. Threshing is done either by beating the plants with sticks. Clean and dry the seeds in sun to bring moisture content down to 12% for safe storage. A well-managed crop yields about 1.5-2.0 t grains/ha.",
+		"diseases": [{
+			"wilt and rust": {
+				"symptom": "wilt and rust",
+				"management": "Seed treatment with systemic fungicides such as thiram + carbendazim (1:1) @ 2.5 g/kg seed and crop rotations help in minimizing incidence of wilt, root rot and collar rot. Foliar spray of mancozeb at 50 DAS has been found very effective against rust."
+			}
+		}]
+	}
+}

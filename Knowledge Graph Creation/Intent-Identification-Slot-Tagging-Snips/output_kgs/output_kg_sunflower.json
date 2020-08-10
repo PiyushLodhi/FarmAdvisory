@@ -1,0 +1,17 @@
+{
+	"sunflower": {
+		"contains": "edible oil",
+		"climateRequirement": "cool,kharif",
+		"soilRequirement": "deep loam,good drainage",
+		"diseases": [{
+			"Stem rot": {
+				"symptom": "The pathogens attack basal part of the stem, including the head with white cottony growth",
+				"management": "Treat the seed with thiram @ 2g/kg seed."
+			}
+		}],
+		"pestManagement": {
+			"Cutworms": "The insect may be serious during March-April in fields where sunflower follows potato. Caterpillars cut the seedlings at the ground level. Apply chlorpyriphos @ 5 L/ha mixed in 10 kg fine soil and broadcasted uniformly before sowing in the field after last ploughing but before planking."
+		},
+		"postProductionTechnique": "The sunflower crop is ready when back of the head turns yellowish-brown and the moisture in seed is 20%. The harvested heads should be dried well in sun and then threshed manually or using threshers. Further, sun-drying of the seed is desirable before storage or oil. A good crop of sunflower yields about 2 t grains/ha."
+	}
+}

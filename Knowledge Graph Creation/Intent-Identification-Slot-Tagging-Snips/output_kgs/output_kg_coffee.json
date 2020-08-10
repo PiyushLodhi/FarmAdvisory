@@ -1,0 +1,25 @@
+{
+	"coffee": {
+		"CropGrownIn": "Karnataka,Kerala,Tamil Nadu",
+		"soilRequirement": "deep,friable",
+		"waterRequirement": "1600-2500 mm",
+		"productionTechnique": "pruning,centering,desuckering",
+		"postProductionTechnique": "Two harvesting systems are used most widely in coffee growing. Picking: Coffee picking is a totally manual process in which the ripe cherries are selected and picked one-by-one, requiring pickers to rotate through the crop several times. This yields a more uniform high-quality crop. Stripping: Coffee stripping is a process that may be manual or mechanised in which all the fruit is removed in one go when it is of average ripeness. It often requires a further check to eliminate impurities and under-ripe or already fermented cherries.",
+		"diseases": [{
+			"Dieback": {
+				"symptom": "Dieback refers to death of younger tertiary branches starting from apex progressing downwards.",
+				"management": "1. Removal of dead ans whippy wood. 2. Providing judicious shade. 3. Conservation of soil moisture with thick mulch. 4. Foliar application of nutrients. 5. Correcting the soil acidity by application of lime."
+
+			},
+			"Leaf Rust": {
+				"symptom": "The disease cause economic loss particularly in arabica coffee. Lower leaves have small pale yellowish spots.",
+				"management": "Spray with 0.5% Bordeaux mixture or 0.03% oxycarboxin 20 EC, 3-4 times a year."
+
+			}
+		}],
+		"pestManagement": {
+			"Coffee berry borer": "The female beetle bores into the berries through the navel region and makes tunnels in the hard bean and lays eggs. A typical pinhole at the tip of the berries indicates the presence of the pest and it damages yound as well as ripe berries. Control measures: Timely andd complete harvest, burying the infested berries and maintaining optimum shade and good drainage can control the pest. Spraying quinalphos 0.05% along with wetting agent 120-150 days after flowering can control the pest.",
+			"White stem borer": "The adults have two flight periods as they emerge from the pupae during April-May and in September to December/ January. As the beetles are active and females lay eggs in the crevices on the main stem of coffee. Swabbing the main stem and the thick primaries with carbaryl 50 WP @ 4 kg in 200 L water once or twice in April-May or October to December."
+		}
+	}
+}

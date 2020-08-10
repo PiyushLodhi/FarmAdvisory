@@ -1,0 +1,25 @@
+{
+	"maize": {
+		"climateRequirement": "Kharif,good amount of moisture",
+		"CropGrownIn": "Andhra Pradesh,Karnataka,Rajasthan,Maharashtra,Bihar,Uttar Pradesh,Madhya Pradesh,Himachal Pradesh",
+		"soilRequirement": "loamy,clay",
+		"productionTechnique": "raised bed planting",
+		"diseases": [{
+			"Turcicum leaf blight": {
+				"symptom": "The disease is prevalent in cooler conditions or with high humidity. Long, elliptical, grayish-green or tan lesions (2.5-15 cm) appear on lower leaves progressing upward. ",
+				"management": "Resistant varieties alongwith need-based sprays of mancozeb @2.5 g/L (with adjuant @ 0.05%) at 8-10 days interval decreases its incidence."
+			},
+			"Maydis leaf blight": {
+				"symptom": "It is a major disease in the areas having warm humid temperate to tropical climate. Lesions on the leaves elongated between the veins, tan with buff to brown or dark reddish brown borders. ",
+				"management": "Growing of resistant varieties with need based sprays of mancozeb or zineb @ 2.5g/L of water are recommended to control this disease"
+			}
+		}],
+		"postProductionTechnique": "The crop acquires physiological maturity when black layer starts forming on the tip of the grains. The crop must be harvested at less than 22 to 25% moisture in grains with husk colour turning pale brown. The harvesting of the cob is done manually. After de-cobbing and threshing, the maize grains must be dried upto 12% moisture level for safe storage. A well managed maize HYV\u2019s and hybrid maize may yield about 4-5 and 5-7 t grains/ha, respectively",
+		"pestManagement": {
+			"Stem Borer": "Major pest of maize in India is stalk borer. Its attack occurs during monsoon season. It lays eggs 10-25 days after germination on lower side of the leaves. The larva of the Chilo enters in the whorl and cause damage in the leaves.",
+			"Termites": "Termite is also an important pest in many areas especially zero-tilled maize. For control of termite, fipronil granules @ 20 kg/ha on termite appearance followed by light irrigation is the recommended practice. If the termite incidence is in patches, the spot application of fipronil @ 2-3 granules/plant should be done."
+		}
+	}
+
+
+}

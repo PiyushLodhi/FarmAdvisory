@@ -1,0 +1,22 @@
+{
+	"chickpea": {
+		"contains": "protein,carbohydrate,fats,minerals,vitamins",
+		"CropGrownIn": "Asia,eastern Turkey,Indian sub-continent,East Africa,Australia,Madhya Pradesh,Rajasthan,Uttar Pradesh,Maharashtra,Haryana,Karnataka,Andhra Pradesh,Gujarat,Bihar,West Bengal,subtropical",
+		"soilRequirement": "very light,heavy,north India,sandy-loam,clay-loam,south,India,Maharashtra,black cotton,clay-loams",
+		"diseases": [{
+			"Wilt": {
+				"symptom": "The disease generally appears after three weeks of sowing. Internal tissues from the collar region downwards become dark and discolored. The petioles and rachis alongwith leaflets droop down. Dropping starts from the upper part of the plant but soon the entire plant droops down. Sometimes only partial wilting of plants may occur.",
+				"management": "Crop rotation, rouging out the infected plants from the field, and treating the seeds before sowing with 0.2% thiram or captan or bavistin 50% @ 250 g/q seed minimizes disease infestation."
+			},
+			"Ascochyta blight": {
+				"symptom": "It is an air-borne fungal disease caused by Ascochyta rabiei. Small circular brown spots appear on the leaves. These spots have discoloured margin. Later black minute dots appear on necrotic lesions arranged in circles. High humidity favours this disease.",
+				"management": "Use of tolerant varieties, rouging out the infected plants, seed treatment and spraying the crop with 0.2% captan or dithane Z-78 are the recommended control measures. Seed treatment with bavistin @ 2.5 g/kg seed or with Trichoderma viride @ 4 g + vitavax @ 1 g by making a paste in 5 ml of water per kg seed is also effective for root rot and blight."
+			}
+		}],
+		"pestManagement": {
+			"Gram pod borer": "The young larvae feed for a short period on tender organs of the plant. With the pod formation, larvae feed on developing seeds after cutting a round hole in the pod and pushing its head inside the pod. Pod borers generally feed on the leaves, buds and pods. Spraying of the crop with insecticides such as chlorphyriphos 0.07% or with botanical pesticides like neem seed kernel extract 5%, nimbecidin, neemex, achook or other neem based products or microbiol products like NPV 250 LE per hectare provides effective control against gram pod borer.",
+			"Cutworm": "The insect remains hidden during day and becomes active during night. The caterpillar cut the plants at the base, below or just above the soil surface or may even cut branches. Cut worm and pod borer are major pest of chickpea. The cultural practices involve ploughing up the field after harvesting the crop to expose hibernating pupae of Agrostis and Helicoverpa, clean cultivation, removing plant debris, early planting, intercropping with mustard, linseed, safflower etc. Need based application of insecticides at appropriate time is necessary."
+		},
+		"postProductionTechnique": "In north Indian plains, crop matures in 150-160 days, whereas in central and south zone crop matures in 120 to 125 days. Crop becomes ready for harvest when leaves turn reddish-brown and start shedding. Plants are either plucked out by hand or cut with sickle. The crop is allowed to dry in sun and on threshing floor in about 5-6 days. Therefore, threshing is done either by beating the plant with stick or by trampling under the feet of bullocks. A well managed deshi chickpea yields about 20-25 q grain/ha, while Kabuli types yield 25-30 q/ha under irrigated conditions. Under rainfed conditions, the crop yields 30-50% of that of irrigated crop."
+	}
+}

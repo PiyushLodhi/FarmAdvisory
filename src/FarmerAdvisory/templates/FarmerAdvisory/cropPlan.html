@@ -1,0 +1,444 @@
+{% extends "base.html" %}
+{% load static %}
+{% block style %}
+<link rel="stylesheet" href="{% static 'css/cropPlan.css' %}">
+<link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/css/bootstrap-select.min.css">
+<style>
+    .input-group {
+        margin-bottom: 10px;
+    }
+</style>
+{% endblock %}
+
+{% block content %}
+{% if username is None %}
+<h2>You are not authorized to access this page</h2>
+{% else %}
+<div class="navbar navbar-default navbar-fixed-top" role="navigation">
+    <div class="container">
+        <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+            </button>
+            <a target="_blank" href="#mypage" class="navbar-brand"><strong>Crop Planning</strong></a>
+        </div>
+        <div class="collapse navbar-collapse">
+            <ul class="nav navbar-nav" id="choose_active">
+                <li class="btn1"><a href="/FarmerAdvisory/">Home</a></li>
+            </ul>
+            <ul class="nav navbar-nav navbar-right">
+                <li class="dropdown">
+                    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+                        <span class="glyphicon glyphicon-user"></span>
+                        <strong>{{username}}</strong>
+                        <span class="glyphicon glyphicon-chevron-down"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+                        <li>
+                            <div class="navbar-login">
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <p class="text-center">
+                                            <span class="glyphicon glyphicon-user icon-size"></span>
+                                        </p>
+                                    </div>
+                                    <div class="col-lg-8">
+                                        <p class="text-center"><strong>Welcome {{username}}</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                        <li class="divider"></li>
+                        <li>
+                            <div class="navbar-login navbar-login-session">
+                                <div class="row">
+                                    <div class="col-lg-12">
+                                        <p>
+                                            <a href="/FarmerAdvisory/logout" class="btn btn-danger btn-block">Logout</a>
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>
+<div class="container-fluid text-center" style="background-color: lightgray;">
+    <h3 style="margin-bottom: 20px;">Recommendation Option</h3>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-addon" title="* State" id="priceLabel">State</span>
+                <!-- insert this line -->
+                <span class="input-group-addon"
+                    style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+
+                <select id="state" name="searchbygenerals[currency]" class="form-control">
+                    <option value="" disabled selected>Choose your option</option>
+                    {% for data in state %}
+                    <option>{{ data }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-addon" title="* District/City" id="priceLabel">District/City</span>
+                <!-- insert this line -->
+                <span class="input-group-addon"
+                    style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+
+                <input type="text" id="city" name="searchbygenerals[priceFrom]" required="required"
+                    class="form-control" value="" placeholder="eg-(Gorakhpur)">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-addon" title="* Climate" id="priceLabel">Climate</span>
+                <!-- insert this line -->
+                <span class="input-group-addon"
+                    style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+
+                <select id="climateType" class="selectpicker form-control" multiple data-max-options="2"
+                    style="width: 90%;">
+                    {% for data in climate %}
+                    <option>{{ data }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-addon" title="* Soil" id="priceLabel">Soil</span>
+                <!-- insert this line -->
+                <span class="input-group-addon"
+                    style="width:0px; padding-left:0px; padding-right:0px; border:none;"></span>
+
+                <select id="soilType" class="selectpicker form-control" multiple data-max-options="2" style="width: 90%;">
+                    {% for data in soil %}
+                    <option>{{ data }}</option>
+                    {% endfor %}
+                </select>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-addon" title="* Temperature" id="priceLabel">Temperature</span>
+                <input type="number" id="temperature" name="searchbygenerals[priceFrom]" required="required"
+                    class="form-control" value="" placeholder="eg-25">
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="input-group">
+                <span class="input-group-addon" title="* Rainfall" id="priceLabel">Rainfall</span>
+                <input type="number" id="rainfall" name="searchbygenerals[priceFrom]" required="required"
+                    class="form-control" value="" placeholder="(10-305)">
+            </div>
+        </div>
+    </div>
+    <div class="form-actions" style="text-align: center;">
+        <button onclick="myFunction()" type="button" class="btn btn-primary">Go</button>
+    </div>
+    <div id="error" style="text-align: left;"></div>
+</div>
+
+<!--Selected Crop Section()-->
+<div id="selectedCrop" class="container-fluid" style="display: none;">
+    <div class="row">
+        <div class="col-md-3">
+            <div class="panel-group">
+                <div class="panel panel-default">
+                    <div class="panel-heading">Recommended Crops</div>
+                    <div class="panel-body">
+                        <div class="list-group" id="recommend">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-9">
+            <div class="panel-group" id="accordion">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse1">
+                                General Information</a>
+                        </h4>
+                    </div>
+                    <div id="collapse1" class="panel-collapse collapse in">
+                        <div class="panel-body" id="generalInfo">Lorem ipsum dolor sit amet, consectetur adipisicing
+                            elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse2">
+                                Climate</a>
+                        </h4>
+                    </div>
+                    <div id="collapse2" class="panel-collapse collapse">
+                        <div class="panel-body" id="climate">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse3">
+                                Soil</a>
+                        </h4>
+                    </div>
+                    <div id="collapse3" class="panel-collapse collapse">
+                        <div class="panel-body" id="soil">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse4">
+                                Production Technique</a>
+                        </h4>
+                    </div>
+                    <div id="collapse4" class="panel-collapse collapse">
+                        <div class="panel-body" id="productionTechnic">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse5">
+                                Pest Management</a>
+                        </h4>
+                    </div>
+                    <div id="collapse5" class="panel-collapse collapse">
+                        <div class="panel-body" id="pest">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse6">
+                                Disease</a>
+                        </h4>
+                    </div>
+                    <div id="collapse6" class="panel-collapse collapse">
+                        <div class="panel-body" id="disease">Lorem ipsum dolor sit amet, consectetur adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</div>
+                    </div>
+                </div>
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        <h4 class="panel-title">
+                            <a data-toggle="collapse" data-parent="#accordion" href="#collapse7">
+                                Post Production Technique</a>
+                        </h4>
+                    </div>
+                    <div id="collapse7" class="panel-collapse collapse">
+                        <div class="panel-body" id="postproductionTechnic">Lorem ipsum dolor sit amet, consectetur
+                            adipisicing elit,
+                            sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+                            minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea
+                            commodo consequat.</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endif %}
+{% endblock %}
+{% block script %}
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap-select/1.7.5/js/bootstrap-select.min.js"></script>
+<script>
+    $(document).on('click', '.list-group a', function () {
+        $(".list-group a").removeClass("active");
+        $(this).addClass("active");
+    });
+    function myFunction() {
+        var output = "<ul>";
+        var flag = 0;
+        var data ={};
+        var selectedValues = [];
+        //get state
+        $("#state :selected").each(function () {
+            selectedValues.push($(this).text());
+        });
+
+        data['state'] = selectedValues[0];
+        if(data['state'] == "Choose your option"){
+            output += "<li> No State is Selected</li>";
+            flag = 1;
+        }
+        //get city
+        data['city'] = $("#city").val();
+        if(data['city'] == ""){
+            output += "<li> City is required</li>";
+            flag = 1;
+        }
+        //get climate value
+        selectedValues = [];
+        $("#climateType :selected").each(function () {
+            selectedValues.push($(this).text());
+        });
+        data['climateType'] = selectedValues;
+        if(data['climateType'] == ""){
+            output += "<li> No Climate Type is Selected</li>";
+            flag = 1;
+        }
+        //get soil
+        selectedValues = [];
+        $("#soilType :selected").each(function () {
+            selectedValues.push($(this).text());
+        });
+        data['soilType'] = selectedValues;
+        if(data['soilType'] == ""){
+            output += "<li> No Soil Type is Selected</li>";
+            flag = 1;
+        }
+        //get Temperature
+        data['temperature'] = $("#temperature").val();
+        //get Rainfall
+        data['rainfall'] = $("#rainfall").val();
+        if(data['rainfall'] == ""){
+            output += "<li> Rainfall is required</li>";
+            flag = 1;
+        }
+        output +="</ul>";
+        if(flag == 0)
+            showRecommendedCrop(data);
+        else
+            document.getElementById("error").innerHTML = output;
+        //Ajax call
+
+    }
+    function showRecommendedCrop(json_data) {
+        document.getElementById("selectedCrop").style.display = "block";
+        var iter;
+        var res = "";
+        $.ajax({
+            url: '{% url "getRecommendedCrop" %}',
+            type: 'POST',
+            async: false,
+            global: false,
+            headers: {'X-CSRFToken': '{{ csrf_token }}'},
+            data: json_data,
+            dataType: 'json',
+            success: function (data) {
+                var temp = 0;
+                var first = "";
+                for (iter = 0; iter < data['len']; iter++) {
+                    if(temp == 0){
+                        res += '<a href="#" class="list-group-item active" id="sel_'+data[iter][0]+'" onclick="myFunction2(this.id)">'+data[iter][0]+'<span class="badge">'+data[iter][1]+'</span></a>';
+                        first = "sel_" + data[iter][0];
+                        //myFunction2('sel_'+data[iter]);
+                    }
+                    else
+                        res += '<a href="#" class="list-group-item" id="sel_'+data[iter][0]+'" onclick="myFunction2(this.id)">'+data[iter][0]+'<span class="badge">'+data[iter][1]+'</span></a>';
+                    temp = 1;
+                }
+                document.getElementById("recommend").innerHTML = res;
+                myFunction2(first);
+            }
+        });
+    }
+
+    function myFunction2(id) {
+        id = id.slice(4)
+        $.ajax({
+            url: '{% url "getCropData" %}',
+            async: false,
+            global: false,
+            data: {
+                'crop': id
+            },
+            dataType: 'json',
+            success: function (data) {
+                var res = "<h4><strong>State in India where " + id + " is majorly produced</strong></h4><ul><li>";
+                res += data['cropGrownIn'];
+                res += "</li></ul>"
+                res += "<h4><strong>Nutrient content for " + id + " </strong></h4><ul><li>";
+                res += data['cropContains'];
+                res += "</li></ul>"
+                res += "<h4><strong>Number of days required to grow for " + id + " </strong></h4><ul><li>";
+                res += data['totalGrowingPeriod'];
+                res += "</li></ul>"
+                document.getElementById("generalInfo").innerHTML = res;
+                res = "<h4><strong>Climate Requirement </strong></h4><ul><li>";
+                res += data['climateRequirement'];
+                res += "</li></ul>"
+                res += "<h4><strong>Temperature range </strong></h4><ul><li>";
+                res += data['mintemperatureRequirement'] + " - " + data['maxtemperatureRequirement'] + "(degree Celcius)";
+                res += "</li></ul>"
+                res += "<h4><strong>Annual Rainfall </strong></h4><ul><li>";
+                res += data['minrainfallRequirement'] + "(cm) - " + data['maxrainfallRequirement'] + "(cm)";
+                res += "</li></ul>"
+                document.getElementById("climate").innerHTML = res;
+                res = "<h4><strong>Soil needed to grow " + id + " </strong></h4><ul><li>";
+                res += data['soilRequirement'];
+                res += "</li></ul>"
+                res += "<h4><strong>Water needed for soil </strong></h4><ul><li>";
+                res += data['minwaterRequirement'] + "(cm) - " + data['maxwaterRequirement'] + "(cm)";
+                res += "</li></ul>"
+                document.getElementById("soil").innerHTML = res;
+                res = "<h4><strong>Production Technique used to grow " + id + " </strong></h4><ul><li>";
+                res += data['productionTechnique'];
+                res += "</li></ul>"
+                document.getElementById("productionTechnic").innerHTML = res;
+                res = "<h4><strong>Post Production Technique used after growing " + id + " </strong></h4><ul><li>";
+                res += data['postProductionTechnique'];
+                res += "</li></ul>"
+                document.getElementById("postproductionTechnic").innerHTML = res;
+                var pest_obj = data['pestManagement'];
+                res = ""
+                for (pest in pest_obj) {
+                    res += "<h4><strong>" + pest + "</strong></h4><ul><li>" + data['pestManagement'][pest] + "</li></ul>";
+                }
+                document.getElementById("pest").innerHTML = res;
+                var disease_obj = data['disease'][0];
+                res = "";
+                for (var disease in disease_obj) {
+                    var name = disease;
+                    name = name.replace(/\s/g, '_');
+                    res += '<div class="row" style="background-color:lightgray;margin-bottom:5px;"><div class="col-xs-6 col-md-3" ><div class = "thumbnail" style="margin-top:10%;"><img src="../../static/images/disease/'+id+'/'+name+'.jpg" alt="#image" style="height:100% width:100%"></div></div><div class="col-xs-6 col-md-9">';
+                    res += "<h4><strong>" + disease + "</strong></h4><ul><li><strong>Symptom: </strong>" + data['disease'][0][disease]['symptom'] + "</li>";
+                    res += "<li><strong>Management: </strong>" + data['disease'][0][disease]['management'] + "</li></ul>";
+                    res += "</div></div>";
+                }
+                document.getElementById("disease").innerHTML = res;
+                //document.getElementById("generalInfo").innerHTML = res;
+            }
+        });
+        //res = res + "</h4>";
+        //alert(res);
+        //document.getElementById("generalInfo").innerHTML = res;
+    }
+
+</script>
+{% endblock script %}

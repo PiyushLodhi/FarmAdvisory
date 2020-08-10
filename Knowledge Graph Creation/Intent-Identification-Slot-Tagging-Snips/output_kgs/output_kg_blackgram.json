@@ -1,0 +1,26 @@
+{
+	"blackgram": {
+		"CropGrownIn": "India,Andhra Pradesh,Bihar,Madhya Pradesh,Maharashtra,Uttar Pradesh,West Bengal,Punjab,Haryana,Karnataka",
+		"contains": "protein,oil,fiber,ash,blackgram,carbohydrates",
+		"climateRequirement": "Kharif,summer",
+		"tempRequirement": "27,30\u00b0 C",
+		"diseases": [{
+			"Cercospora Leaf spot": {
+				"symptom": "Angular brown or red spots, with grey or brown centre and reddish-purple border on leaves, stalk and pods.",
+				"management": "Spray with Bordeaux mixture (5:5:50) or 0.2% ziram"
+			},
+			"Powdery mildew": {
+				"symptom": "White powdery patches on leaves and other green parts, later becoming dull coloured and are studded with black dot.",
+				"management": "Dust the crop with finely powdered sulphur (200-mesh) @ 20 kg/ha."
+			},
+			"Viral diseases": {
+				"symptom": "",
+				"management": "These diseases can be minimized by controlling their vector through  spraying metasystox (0.01%) and uprooting and destroying the infected plants."
+			}
+		}],
+		"pestManagement": {
+			"Pod borer": "Caterpillars feed on tender foliage and young pods. They make holes in the pods and feed on developing seeds. Spraying the crop with 0.05% quinalphos can successfully control the pest."
+		},
+		"postProductionTechnique": "Crop is harvested before it is dead ripe. The plants are cut with sickle, dried for 7-10 days and threshed by beating with sticks and then winnowed. The seeds should be dried to around 10-12% moisture. A good crop of blackgram may yield 1.0-1.5 t grains/ha."
+	}
+}

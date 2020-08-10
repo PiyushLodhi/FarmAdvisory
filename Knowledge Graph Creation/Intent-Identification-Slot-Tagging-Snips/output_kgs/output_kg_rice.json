@@ -1,0 +1,26 @@
+{
+	"rice": {
+		"CropGrownIn": "Uttar Pradesh,West Bengal,Punjab,Punjab,Asia",
+		"contains": "protein,fat",
+		"climateRequirement": "Kharif,hot",
+		"soilRequirement": "loamy,Punjab,clay,Andhra Pradesh,water holding,clay,dry,wet,seeding,Dry,uplands,furrows",
+		"productionTechnique": "dry,broadcasting,seeding",
+		"tempRequirement": "15-20",
+		"waterRequirement": "litres"
+	},
+	"diseases": [{
+		"Leaf and neck blast ": {
+			"symptom": "Initial symptoms on the leaves are white to grayish green circular lesions/spots with dark green borders, which may enlarge and coalesce to kill the entire leaves. Lesions on the neck cause the girdling of the neck and the panicle to fall over.",
+			"management": "Early sowing of seeds and balanced use of fertilizers.:: Planting resistant varieties against the rice blast is the most practical and economical way.:: Systemic fungicides are effective against the disease."
+		},
+		"Bacterial leaf blight": {
+			"symptom": "Water-soaked to yellowish stripes on leaf blades or",
+			"management": "starting at leaf tips. :: Severely infected leaves tend to dry quickly.:: Field sanitation such as removing weed hosts, rice straws, ratoons, and volunteer seedlings.:: Use of resistant varieties.:: Seed treatment with bleaching powder (100\u03bcg/ml) and zinc sulfate (2%) reduce bacterial blight"
+		}
+	}],
+	"postProductionTechnique": "The plant should be cut close to the ground at ripening and left for drying. Threshing can be accomplished by manual methods, pedal threshers or power driven stationary threshers. Combine machines can be employed for combined harvesting and threshing. The produce should be properly sun-dried. The optimum moisture content for storage of rice grains is 12%. A well managed crop of mid-late duration (135-150 days) varieties and hybrids yield about 6\u20137 t/ha, whereas short duration cultivars yield about 4.5\u20135.5 t/ha",
+	"pestManagement": {
+	  "Stem borer": "Symptoms of stem borer damage are deadhearts and whiteheads. Whiteheads are discolored panicles with empty or partially filled grains. Larvae feed on the tissues around the node. Adop seedling root dip treatment in 0.05% chlorpyriphos emulsion for one minute before transplanting in endemic areas. Apply carbofuran 3G @ 20kg ha-1 or phorate 10 G @ 12.5 ha-1 or fenitrothion 50EC @ 0.1%.",
+	  "Leaf folder": "Caterpillars fold a rice leaf around them and attach the leaf margins together with silk strands. Folded leaves restrict photosynthesis. Use cultural practices like crop rotations, reduced planting density and balanced nutrition."
+	}
+}

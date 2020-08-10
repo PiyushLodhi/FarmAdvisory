@@ -1,0 +1,345 @@
+# CropGrownIn intent
+type: intent
+name: CropGrownIn
+slots:
+  - name: crop
+    entity: crop
+  - name: location
+    entity: location
+utterances:
+  - "[crop] is grown in almost all the states in India, with [location], [location] and [location] being leading states in area, production and productivity, respectively"
+  - "[location] and [location] are suitable for [crop]"
+  - "[crop] is grown in [location] and [location]"
+  - "[crop] is essentially a [location] crop" 
+  - "90% of the [crop] is grown in [location]"
+  - "[location] has highest productivity of [crop]"
+  - In [location] [crop] is the third most important food crops after rice and wheat.
+  - "[crop] [location]"
+  - "[crop] is an important pulse crop in [location]"
+  - In India, major [crop] producing areas are situated in [location], [location], [location] and [location].
+  - "[crop] are grown predominantly in [location], [location] and [location]."
+  - "The major [crop] producing states are [location], [location], [location], [location], [location], [location], [location], [location], [location] and [location]."
+  - "[crop] is essentially a [location] crop"
+  - "[location] is major producer and consumer of [crop] in the world."
+  - In India, [crop] is very popularly grown in [location], [location], [location], [location], [location], [location], [location], [location] and [location].
+  - "[crop] is a [location] crop"
+  - "[crop] production in India at present time is restricted primarily in [location], [location] and [location]"
+  - "[crop] is cultivated in [location]"
+  - "The main [crop] growing states are [location], [location], [location], [location], [location] and [location]."
+  - "[crop] is commonly cultivated as winter annual in the [location] regions."
+  - "[location] is major [crop] producing country"
+  - In the [location] region, [crop] gets more or less ideal climatic conditions for its growth.
+
+
+
+
+# climateRequirement intent
+---
+type: intent
+name: climateRequirement
+slots:
+  - name: crop
+    entity: crop
+  - name: climate
+    entity: climate
+utterances:
+  - "[crop] crop needs a [climate] climate"
+  - Normally, the most ideal conditions for [crop] cultivation are [climate] weather during the vegetative growth period and [climate] weather during grain formation
+  - "[crop] crop requires [climate]" 
+  - "[crop] with deep rooted system can be grown in [climate]"
+  - "[climate], [climate] and [climate] have considerable effect on growth and development of rice plant"
+  - "[crop] crop is grown during [climate] season"
+  - "[crop] needs a [climate] climate"
+  - Normally, the most ideal conditions for [crop] cultivation are [climate] weather
+  - "According to latest data of 2011-12, [crop] is cultivated in 8.78 m ha mainly during [climate] season which covers 80% area"
+  - "Predominant [crop] growing states collectively contributing to more than 80% of total national maize production are [location] (20.9%), [location] (16.5%), [location] (9.9%), [location] (9.1%), [location] (8.9%), [location] (6.1%), [location] (5.7%) and [location] (4.4%)."
+  - "[crop] [climate]"
+  - "[crop] require a [climate] growing season"
+  - "[crop] grown as a [climate] season crop"
+  - "[crop] is grown all over the country in [climate] and [climate] seasons."
+  - "[crop] requires a [climate] climate during germination and seedling growth."
+  - "[crop] can be grown successfully in any season viz. [climate], [climate] and spring throughout India."
+  - "[crop] is a most important [climate] forage legume in India."
+  - "[crop] is adapted to [climate] climate."
+  - "[crop] is a [climate] season loving shrub, adapted to a wide range of climate."
+
+#tempRequirement
+---
+type: intent
+name: tempRequirement
+slots:
+  - name: crop
+    entity: crop
+  - name: tempValue
+    entity: snips/temperature
+utterances:
+  - "[crop] requires [tempValue] temperature"
+  - The optimum temperature for the germination of [crop] is [tempValue]
+  - Most suitable climate to cultivate [crop] is [tempValue] with heavy rainfall.
+#contains intent
+---
+type: intent
+name: contains
+slots:
+  - name: crop
+    entity: crop
+  - name: nutrient
+    entity: nutrient
+utterances:
+  - "[crop] contains 6-7% [nutrient]"
+  - "[nutrient] content is low in [crop]"
+  - "[crop] is a good source of [nutrient] (18-22%), [nutrient] (52-70%), [nutrient] (4-10%), [nutrient] (calcium, phosphorus, iron) and [nutrient]."
+  - "[crop] [nutrient]"
+  - "[crop] 26% [nutrient]"
+  - The mature [crop] is highly nutritive containing high proportion of [nutrient] (22.5%), [nutrient] (62.1%), [nutrient] (1.8%), [nutrient] (calcium, iron) and [nutrient] (riboflavin, thiamin etc).
+  - "[crop] is [nutrient] rich staple food"
+  - "[crop] seed contains about 45% oil and 26% [nutrient]."
+  - "[crop] is a rich source of high quality edible oil (40-43%) and also suitable for edible refined [nutrient] and vanaspati because of high degree of polyunsaturated fatty acids, pleasant odour and nutritional value."
+  - "[crop] forage contains about 20% crude [nutrient] with high digestibility (up to 65%) and palatability."
+#soilRequirement intent
+---
+type: intent
+name: soilRequirement
+slots:
+  - name: crop
+    entity: crop
+  - name: soilType
+    entity: soilType
+utterances:
+  - As regards texture, [crop] is grown on [soilType] sands in [location] 
+  - Soils having good [soilType] capacity with good amount of [soilType] are ideal for [crop]
+  - "[crop] is sown in [soilType] soil or [soilType] soil"
+  - "[crop] can be grown successfully in a variety of soils, ranging from [soilType] to [soilType]"
+  - A well-drained [soilType] or [soilType] is required for successful production of [crop].
+  - "[crop] prefers [soilType] soils"
+  - "[crop] does well on both [soilType] and [soilType]"
+  - A well drained loamy to [soilType] soil is the best soil for [crop] cultivation.
+  - "[crop] thrive on [soilType] soils"
+  - "Most suitable soils for [crop] production are [soilType], light-textured, loose sandy-loam or sandy clay loam with good drainage."
+  - "[crop] [soilType]"
+  - "[crop] thrives best on [soilType] soils having good drainage and irrigation facilities."
+  - "[crop] is raised mainly as a rainfed crop in the [soilType] and medium soils and as an irrigated crop in the [soilType] soils."
+  - A [soilType], [soilType], [soilType] soil with ample available water holding capacity is considered ideal for [crop] cultivation.
+
+
+
+#productionTechnique 
+---
+type: intent
+name: productionTechnique
+slots:
+  - name: crop
+    entity: crop
+  - name: method
+    entity: method
+utterances:
+  - "For [crop], three methods are followed. They are [productionTechnique]."
+  - "For [crop] a seed rate of 30-50 kg ha -1 is required for [productionTechnique]"
+  - "Generally, the [productionTechnique] is considered as best planting method for [crop] during monsoon and winter seasons both under excess moisture as well as limited water availability/rainfed conditions."
+  - "[crop] needs [productionTechnique] for good aeration in root zone."
+  - "For [crop], Desired seed-bed may be obtained by a [productionTechnique] followed by two [productionTechnique]."
+  - "For [crop], Field should be ploughed by [productionTechnique] or [productionTechnique]." 
+  - "For [crop], Before pre-sowing irrigation followed by two [productionTechnique] are required to prepare good seed bed."
+  - The seeds being very small, [crop] requires a [productionTechnique].
+
+
+#waterRequirement
+---
+type: intent
+name: waterRequirement
+slots:
+  - name: crop
+    entity: crop
+  - name: waterRequirementAmount
+    entity: snips/number
+  - name: waterRequirementUnit
+    entity: Unit
+utterances:
+  - "about 3000-[waterRequirementAmount] [waterRequirementUnit] water is required to produce 1 kg [crop]"
+  - "[crop] grows well in those areas where annual rainfall ranges between [waterRequirementAmount] [waterRequirementUnit]"
+  - "[crop] [waterRequirementAmount] [waterRequirementUnit]"
+  - "[crop] crop requires good amount of moisture and can be grown in areas receiving well distributed rainfall of 500 to [waterRequirementAmount] [waterRequirementUnit]."
+  - "[crop] can be grown on residual soil moisture in areas with 600-[waterRequirementAmount] [waterRequirementUnit] annual rainfall"
+  - "[crop] requires [waterRequirementAmount] [waterRequirementUnit] of water depending on soil and climate"
+  - A well distributed [waterRequirementAmount] [waterRequirementUnit] rainfall is highly suitable
+  - "[crop] is grown in areas receiving [waterRequirementAmount] [waterRequirementUnit] annual rainfall."
+  - "[crop] require an annual precipitation of [waterRequirementAmount] [waterRequirementUnit]"
+  - "[crop] can be grown successfully in places receiving a minimum rainfall of 500 mm and a maximum of [waterRequirementAmount] [waterRequirementUnit]."
+  - "[crop] can be grown successfully in areas which receive annual rainfall of [waterRequirementAmount] cm or even lower but the irrigation must be assured."
+
+
+
+#City Entity
+---
+type: entity
+name: city
+values:
+  - london
+  - [new york, big apple]
+  - [paris, city of lights]
+  
+
+#soilType entity
+---
+type: entity
+name: soilType
+values:
+  - loamy
+  - clay
+  - water holding
+  - dry
+  - wet
+  - wide
+  - wide type
+  - very light
+  - very heavy
+  - sandy-loam
+  - [clay-loam, clay-loams]
+  - black cotton
+  - friable
+  - weed-free
+  - water retentive
+  - stiff loamy
+  - heavy soils
+  - brown alluvium
+  - black cotton soil
+  - light-loam
+  - well-trained
+  - light-textured
+  - good drainage
+  - deep loam
+  - black cotton
+  - alluvial
+  - alluvial sandy loam
+  - clay loamy soils
+
+
+#crop entity
+---
+type: entity
+name: crop
+values:
+  - wheat
+  - [rice, milled rice]
+  - [chickpea, gram]
+  - maize
+  - [pea, field pea, peas]
+  - [black gram, blackgram]
+  - [greengram, green gram, moong]
+  - rapeseed
+  - [mustard, sarson]
+  - [groundnut, peanut, mungfali]
+  - cotton
+  - jute
+  - sugarcane
+  - coffee
+  - tea
+#location entity
+---
+type: entity
+name: location
+values:
+  - Uttar Pradesh
+  - West Bengal
+  - Punjab
+  - Haryana
+  - tropics
+  - tropical
+  - [subtropical, sub-tropics]
+  - Asia
+  - Andhra Pradesh
+  - Arunachal Pradesh
+  - Assam
+  - Bihar
+  - Chhatisgarh
+  - Goa
+  - Gujarat
+  - Himachal Pradesh
+  - Jharkhand
+  - Karnataka
+  - Kerala
+  - Madhya Pradesh
+  - Maharashtra
+  - Manipur
+  - Meghalaya
+  - Mizoram
+  - Nagaland
+  - Odisha
+  - Rajasthan
+  - Sikkim
+  - Tamil Nadu
+  - Telangana
+  - Tripura
+  - Uttarakhand
+  - Indian sub-continent
+  - East Africa
+  - Australia
+  - arid
+  - semi-arid
+  - temperate
+  - Brazil
+  - China
+  - Sri Lanka
+
+#climate entity
+---
+type: entity
+name: climate
+values: 
+  - hot and humid
+  - cool and moist
+  - good amount of moisture
+  - low moisture
+  - kharif
+  - cool
+  - winter
+  - summer
+  - warm and moist
+
+#nutrient entity
+---
+type: entity
+name: nutrient
+values:
+  - [protein, proteins]
+  - [carbohydrate, carbohydrates]
+  - [fats, fat]
+  - [minerals, mineral]
+  - iron
+  - iodine
+  - lycine
+  - tyrocene
+  - cystine
+  - arginine
+  - ash
+  - fibre
+
+#productionTechnique
+---
+type: entity
+name: productionTechnique
+values:
+  - broadcasting
+  - drilling
+  - dibbling
+  - raised bed planting
+  - cloddy and rough seed-bed
+  - deep ploughing
+  - harrowing
+  - mould board plough
+  - tractor drawn harrow
+  - ploughing with cultivator
+  - fine seedbed
+  - pruning
+  - centering
+  - desuckering
+
+
+#waterRequirementUnit
+---
+type: entity
+name: Unit
+values:
+  - litres
+  - l
+  - mm

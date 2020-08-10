@@ -1,0 +1,26 @@
+{
+	"rapeseed-mustard": {
+		"CropGrownIn": "Rajasthan,UP,Haryana,MP,Gujarat,Brown,Assam,Bihar,Orissa,West Bengal,temperate",
+		"soilRequirement": "light-loam",
+		"productionTechnique": "mould board plough,tractor drawn harrow,ploughing with cultivator",
+		"waterRequirement": "40-100,cm",
+		"diseases": [{
+			"White rust": {
+				"symptom": "The dangerous stage is floral infection in which the floral parts are malformed and become thick leathery green. The branches become zig-zag in structure and white growth of the fungus can be seen on these affected branches.",
+				"management": "For the control of white rust, Alternaria and downy mildew spray mancozeb 1.5 kg/ha at initial appearance of white rust or Alternaria and repeat the spray 1-3 times after 15 days."
+			},
+			"Alternaria blight": {
+				"symptom": "Small light brown round spots develop on the lower leaves first and then on upper leaves after 40 DAS. Later on, these spots develop into big circular dark coloured with concentric rings clearly visible in these spots. When the temperature ranges from 18- 25°C with high humidity (80%), dense crop canopy and rains during February increases the disease at faster rate.",
+				"management": "For the control of white rust, Alternaria and downy mildew spray mancozeb 1.5 kg/ha at initial appearance of white rust or Alternaria and repeat the spray 1-3 times after 15 days."
+			},
+			"Downey mildew": {
+				"symptom": "At flowering stage, the whole inflorescence is malformed and becomes thick green, twisted and covered with white cottony growth. Disease development is favoured by a temperature 10-20°C and wet weather.",
+				"management": "For the control of white rust, Alternaria and downy mildew spray mancozeb 1.5 kg/ha at initial appearance of white rust or Alternaria and repeat the spray 1-3 times after 15 days."
+			}
+		}],
+		"pestManagement": {
+			"Mustard aphid": "This is the most important pest of rapeseed and mustard. Spray the crop with 625 to 1000 ml oxydemeton methyl (Metasystox 25 EC) or dimethoate (Rogor) 30 EC after diluting it in 625 to 1000 L water/ha."
+		},
+		"postProductionTechnique": "Usually rapeseed-mustard crops are harvested as soon as 75% of the pods turn yellow and moisture content of the seed is around 30 to 40%. Bundles of the harvested plants are staked and dried in the sun for a few days. Threshing is done by the usual method of threshing by bullocks or running a tractor over the dried plants. Moisture content of the seed must be less than 8% at the storage time. Under normal conditions, rapeseed yields about 1.4-2.0 t/ha of seed, while mustard may give 2.0-2.5 t/ha. Average yield in rapeseed & mustard group are: toria (12-15 q/ha), yellow or brown sarson (12-15q/ha) and rai (15-20 q/ha)."
+	}
+}

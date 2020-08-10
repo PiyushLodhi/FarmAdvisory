@@ -1,0 +1,10 @@
+{
+	"berseem": {
+		"CropGrownIn": "tropical,subtropical",
+		"contains": "protein",
+		"climateRequirement": "cool",
+		"productionTechnique": "fine seedbed",
+		"waterRequirement": "150-250,cm",
+		"soilRequirement": "all except very light sandy"
+	}
+}

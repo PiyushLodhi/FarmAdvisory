@@ -1,0 +1,27 @@
+.navbar-login {
+    width: 305px;
+    padding: 10px;
+    padding-bottom: 0px;
+}
+
+.navbar-login-session {
+    padding: 10px;
+    padding-bottom: 0px;
+    padding-top: 0px;
+}
+
+.icon-size {
+    font-size: 50px;
+}
+.container-fluid {
+    padding: 60px 50px;
+}
+
+.md-outline.select-wrapper + label {
+    top: .5em !important;
+    z-index: 2 !important;
+}
+.input-group {
+    margin-bottom: 10px;
+}
+/* MultiSelect */

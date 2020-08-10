@@ -1,0 +1,24 @@
+{
+	"pigeonpea": {
+		"CropGrownIn": "India",
+		"climateRequirement": "kharif",
+		"soilRequirement": "sandy-loam,clay-loam,black cotton,clay-loams",
+		"contains": "protein,iron,iodine,tyrocene,cystine,arginine",
+		"waterRequirement": "500-1000,mm",
+		"productionTechnique": "cloddy and rough seed-bed,deep ploughing,harrowing",
+		"diseases": [{
+			"Yellow Mosaid": {
+				"symptom": "During the growing phase, incidence of yellow mosaic can be seen. The affected plants show yellow mottled symptoms. These plants can be rouged out as and when they appear.",
+				"management": "White fly is known to spread this disease; hence after removal of the affected plants, an insecticide spray is important."
+			},
+			"Root rot and wilt": {
+				"symptom": "root rot and wilt",
+				"management": "affected areas are sprayed with 0.1% bavistin solution"
+			}
+		}],
+		"pestManagement": {
+			"Pod borer": "Pod borer survives on many host plants across different seasons, including cotton and legumes. Redgram is its preferred choice. Monocrotophos (0.04%) spray at pre and post-flowering stage is effective in controlling this pest."
+		},
+		"postProductionTechnique": "When most of the leaves are shed and 80% pods turn brown, is the best time for harvest. A grain yield of 15-20 q/ha as rainfed intercrop and 25-30 q/ha as irrigated monocrop can be obtained. Very early and early varieties yield 20-30% less. Dry clean seeds in sun to ensure moisture below 8%. Beetles affect redgram in storage. Mix crushed neem leaves with grain and store in gunny bags. Gunny bags can also be treated with 5% neem oil."
+	}
+}

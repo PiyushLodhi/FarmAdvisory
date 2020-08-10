@@ -1,0 +1,26 @@
+{
+	"wheat": {
+		"CropGrownIn": "tropics,subtropics",
+		"climateRequirement": "cool,Wheat moist",
+		"tempRequirement": "20-22 o C,16,15,20 cm",
+		"soilRequirement": "a wide",
+		"productionTechnique": "sufficient,respectively",
+		"waterRequirement": "15-20 cm"
+	},
+	"diseases": [{
+		"Rusts": {
+			"symptom": "Wheat is infected by brown, yellow and black rusts. Brown or leaf rust is caused by a fungus known as Puccinia recondite tritici. Yellow or stripe rust is caused by the fungus, Puccinia striiformis. Black or stem rust of wheat is caused by the fungus Puccinia graminis tritici. ",
+			"management": "Treat the seed with Trichoderma viride @ 4 g/kg seed. :: Late sown crop is more susceptible to rust. Hence avoid late sowing of wheat. :: High nitrogen dose favours rust infection, whereas high potash dose reduces rust infection. Hence there is need for balanced fertilization. :: Spray the crop with propiconazole (Tilt 25 EC) @ 0.1% at yellow rust initiation. This spray will also help in the control of powdery mildew and Karnal bunt diseases. Second and third spray may be repeated with an interval of 10-15 days."
+		},
+		"Loose smut": {
+			"symptom": "Loose smut is caused by fungus Ustilago nuda tritici. ",
+			"management": "Terminal symptom of loose smut is the production of black powder in place of wheat grains in the ears. :: As the ear formation starts, fungus accumulates in the floral parts, which are completely destroyed due to formation of the black powder. :: Loose smut can be controlled by growing loose smut resistant varieties. :: Seed treatment should be done with carboxin (Vitavax 75 WP) @ 1.25 g/kg seed. Uproot the infected plants, bury them underground or burn to avoid further field infection."
+		},
+		"Karnal bunt": {
+			"symptom": "Karnal bunt or partial bunt is caused by fungus Neovossia indica. ",
+			"management": "A portion of infected grain along its groove is converted into a black powdery mass.  The black powder gives a foul smell due to presence of trimethylamine. :: Do not grow highly susceptible wheat varieties. One spray of propiconazole (25 EC) @ 0.1% at ear head emergence stage can be given to attain near complete control"
+		}
+	}],
+	"postProductionTechnique": "The most suitable stage for harvesting wheat is when plants are completly dry and the grains becomes hard and contain 20-25% moisture. Wheat crop harvested manually or by reapers, is dried for 3-4 days on the threshing floor and then threshing is done by threshers. A well managed crop may yield about 3.5 to 4.5 t grains/ha",
+	"pestManagement": "The most suitable stage for harvesting wheat is when plants are completly dry and the grains becomes hard and contain 20-25% moisture. Wheat crop harvested manually or by reapers, is dried for 3-4 days on the threshing floor and then threshing is done by threshers. A well managed crop may yield about 3.5 to 4.5 t grains/ha."
+}

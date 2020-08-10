@@ -1,0 +1,21 @@
+{
+	"greengram": {
+		"contains": "protein",
+		"CropGrownIn": "tropical, all states",
+		"soilRequirement": "sandy-loam",
+		"diseases": [{
+			"Cercospora Leaf spot": {
+				"symptoms": "Angular brown or red spots, with grey or brown centre and reddish-purple border on leaves, stalk and pods",
+				"management": "Spray with Bordeaux mixture (5:5:50) or 0.2% ziram. Spray dithane Z-78 @ 2 kg or dithane M-45 @ 2 kg in 750 litres of water/ha."
+			},
+			"Yellow mosaic": {
+				"symptoms": "This disease is caused by a virus. It is more common in northern India. Yellow, diffused round spots scattered in the leaf lamina are initial symptoms.",
+				"management": "These spots expand rapidly. Viral disease can be minimized by controlling the vector through spraying metasystox (0.01%)."
+			}
+		}],
+		"pestManagement": {
+			"Pod borer": "Caterpillars feed on tender foliage and young pods. They make holes in the pods and feed on developing seeds. Spraying the crop with 0.05% quinalphos can successfully control the pest."
+		},
+		"postProductionTechnique": "Shattering of pods is a great problem in this crop. Thus, picking should be done as the pods mature. Harvesting should be completed in 2–3 pickings. The pods after complete drying should be threshed manually. A good crop of greengram may yield about 1.0–1.5 tonnes of grain/ha."
+	}
+}

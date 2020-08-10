@@ -1,0 +1,19 @@
+{
+	"pea": {
+		"soilRequirement": "sandy-loam",
+		"contains": "proteins,carbohydrates,fats,minerals,iron",
+		"CropGrownIn": "Uttar Pradesh,Madhya Pradesh,Bihar,Maharashtra",
+		"climateRequirement": "cool growing",
+		"tempRequirement": "27\u00b0C",
+		"diseases": [{
+			"Powdery mildew": {
+				"symptoms": "White powdery growth or fungus mycelium and spores develop on leaves, branches, stems, tendrils, petioles and pods. Pods get loose, bright green, have shiny surface and look dull.",
+				"management": "Several powdery mildew resistant varieties such as Rachna, Pant Matar 5, DMR 7, HUP 2 are available. In case of occurrence on susceptible varieties, spray wettable sulphur 70 WP (Sulfex) 0.3% at 10 days interval on the susceptible varieties."
+			}
+		}],
+		"pestManagement": {
+			"pea pod borer": "crop may be sprayed with monocrotophos 0.04% at 10 to 15 days interval beginning with pod formation."
+		},
+		"postProductionTechnique": "Field peas should be harvested when they are fully ripe and threshed after sufficient drying in the sun. By adopting improved package of practices, the crop can yield 10-12 t green pods/ha. Field peas can yield about 2-3 t grains/ha."
+	}
+}

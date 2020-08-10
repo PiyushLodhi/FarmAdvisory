@@ -1,0 +1,18 @@
+{
+	"groundnut": {
+		"contains": "oil,protein",
+		"CropGrownIn": "Gujarat,Tamil Nadu,Andhra Pradesh,Maharashtra,Karnataka,Rajasthan",
+		"soilRequirement": "light-textured,sandy-loam,clay loam,good drainage",
+		"waterRequirement": "500-1250 mm",
+		"diseases": [{
+			"Tikka disease or leaf spot (ansal organisation)": {
+				"symptom": "The spots on leaves are circular to irregular and are surrounded by a yellow halo. The spots on the upper surface look like reddish brown to black, whereas on lower surface these spots are smooth and light brown in colour.",
+				"management": "Spray the crop two to three times with dithane M- 45 or blitox-50 @ 1.5-2.0 kg/ha at 10-15 days interval starting from the first appearance of spot."
+			}
+		}],
+		"pestManagement": {
+			"White grub": "The young grubs are white and translucent. Fully grown larvae are larger than a thumb. The larvae feed on soil organic matter for a few weeks and then they eat roots. They also damage pods. The grubs cut and eat the plant roots, and consequently the plants wilts and dies. White-grub is a menace in the light soils, which can be controlled effectively by treating seed with chlorpyriphos 20 EC @ 15 ml/kg seed."
+		},
+		"postProductionTechnique": "Harvesting of groundnut should be done at blackening of inner shell and development of testa colour. Harvest the crop at 80% pod maturity. After harvesting, the pods are dried in sun to reduce moisture content to 20-25% for threshing. After threshing, kernels are dried to reduce the moisture content to 8-10%. Under normal conditions, groundnut yields about 15-25 q pods/ha with shelling percentage of 68-69."
+	}
+}

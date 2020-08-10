@@ -1,0 +1,21 @@
+{
+	"soybean": {
+		"climateRequirement": "warm,moist",
+		"CropGrownIn": "Madhya Pradesh,Maharashtra,Uttar Pradesh",
+		"soilRequirement": "well-drained,sandy-loam",
+		"diseases": [{
+			"Downy mildew": {
+				"symptom": "Small chlorotic spots appear on the upper surface of the leaves, which later turn greyish to dark brown with downy growth on the lower surface of the leaves",
+				"management": "For control, the seed should be treated with captan @ 3.0 g/kg seed before sowing. Spraying the crop with copper oxychloride 50 % @ 5.0 g/L water has been found effective in controlling the disease."
+			},
+			"Yellow mosaic virus": {
+				"symptom": "Yellow mosaic is an important virus disease. It is transmitted by white fly. The affected leaves become yellow with a slight crinkling and reduction in size.",
+				"management": "Regular spraying of the crop with methyl demiton 25 EC (Metasystox 25 EC) @ 1.5 ml/L water starting from third week onwards at an interval of 10-15 days keep the white fly population under control and the crop becomes free from the incidence of yellow mosaic virus"
+			}
+		}],
+		"pestManagement": {
+			"Gram pod borer": "The caterpillar makes holes in the pod and feeds on the ripening grains. The caterpillar, as it grows, bores into green pods and destroys the seeds completely. It can be controlled by dusting the crop with monocrotophos 36 SL @ 1.5 ml/L water. The insecticide is applied at the fruiting stage and it may be repeated at the interval of 10 days."
+		},
+		"postProductionTechnique": "The plant is harvested when the leaves turn yellow and finally drop and only the pods remain on the stalk. Harvesting is done either by cutting the plants close to the ground with sickles. The harvested plants are carried to the threshing floor and dried in the sun about a week. It can also be threshed by wheat thresher after some adjustments. A moisture content of 13-14% is ideal for threshing with thresher. A good crop of soybean may yield about 2.0–2.5 t grains/ha."
+	}
+}
